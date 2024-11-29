@@ -1,0 +1,13 @@
+def gerar_senha():
+    # Gera uma senha com 6 dígitos numéricos
+    senha = ''.join(str(random.randint(0, 9)) for _ in range(6))
+    return senha
+
+# Exemplo de uso
+senha_gerada = gerar_senha()
+print("Senha gerada:", senha_gerada)
+
+No terminal, execute o código com o comando:
+python gerar_senha.py
+O resultado será exibido no terminal integrado, algo como:
+Senha gerada: 764392
